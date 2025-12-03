@@ -1,1 +1,26 @@
+body {
+    padding: 1rem;
+    background: lightblue;
+}
 
+header { 
+    background-color: red;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+article, aside {
+    padding: 1rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
