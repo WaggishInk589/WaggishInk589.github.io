@@ -1,10 +1,75 @@
-body {
+@media screen and (max-width:48rem) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .topnav a {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+    display: flex;
+    flex-flow: column;
+    background-color: lightgray;
     padding: 1rem;
-    background: lightblue;
+}
 }
 
-header { 
-    background-color: red;
+@media screen and (min-width:48rem) {
+    .topnav a {
+        display: flex;
+        align-items: center;
+        color: white;;
+        padding: 10px;
+        border-right: 1px solid white;
+        text-decoration: none;
+
+    }
+    .topnav {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightgray;
+    padding: 1rem;
+}
+}
+
+
+
+
+
+
+
+
+body {
+    background: #140c10;
+}
+
+header h1 { 
+    position: absolute;
+    color: white;
+    margin-top: -4rem;
 }
 
 nav a {
@@ -12,15 +77,12 @@ nav a {
 }
 
 main {
-    background-color: white;
+    margin-top:  1rem;
+    margin-bottom: 1rem;
+    background-color: #35343b;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-article, aside {
-    padding: 1rem;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+article, aside {
+    padding: 1rem;
 }
