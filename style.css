@@ -1,8 +1,4 @@
 @media screen and (max-width:48rem) {
-    header {
-        display: flex;
-        justify-content: center;
-    }
 
     .topnav a {
         display: flex; 
@@ -22,12 +18,11 @@
     footer {
     display: flex;
     flex-flow: column;
-    background-color: lightgray;
-    padding: 1rem;
 }
 }
 
 @media screen and (min-width:48rem) {
+
     .topnav a {
         display: flex;
         align-items: center;
@@ -35,12 +30,18 @@
         padding: 10px;
         border-right: 1px solid white;
         text-decoration: none;
-
     }
+
     .topnav {
         display: flex;
         flex-flow: row;
         justify-content: space-evenly;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 
     main {
@@ -50,10 +51,9 @@
     footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: lightgray;
-    padding: 1rem;
 }
 }
+
 
 
 
@@ -66,10 +66,18 @@ body {
     background: #140c10;
 }
 
-header h1 { 
-    position: absolute;
-    color: white;
-    margin-top: -4rem;
+header .logo {
+display: flex;
+filter: invert();
+height: auto;
+width: 30%;
+position: absolute;
+}
+
+header .Background{
+    display: flex;
+    height: auto;
+    width: 100%;
 }
 
 nav a {
@@ -85,4 +93,15 @@ main {
 
 article, aside {
     padding: 1rem;
+}
+
+aside {
+    background-color: #2b2a2f;
+    color: white;
+}
+
+footer { 
+    background-color: black;
+    padding: 1rem;
+    color: white;
 }
