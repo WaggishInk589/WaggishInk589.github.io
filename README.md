@@ -1,3 +1,3 @@
 # WaggishInk589.github.io
 
-https://waggishink589.github.io/index
+[website](https://waggishink589.github.io/)
