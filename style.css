@@ -89,8 +89,6 @@ nav a {
 }
 
 main {
-    margin-top:  1rem;
-    margin-bottom: 1rem;
     background-color: #35343b;
     display: grid;
 }
